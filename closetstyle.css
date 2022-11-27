@@ -1,0 +1,115 @@
+header,
+main,
+aside,
+footer{
+    display: flex;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 
+    'header header'
+    'main side'
+    'footer footer';
+}
+.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainborder{
+    width: 75vw;
+    background-color: #e0e0e0;
+}
+
+.Listborder{
+    background-color:#e0e0e0;
+}
+
+/* Cloth bar */
+
+#clothesList{
+    padding-left: 50px;
+}
+
+.clothImage{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.clothName{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+/* till here */
+
+.Selectbtn,
+.Deletebtn{
+    width:75pt;
+}
+
+.DIYDeletebtn{
+    width: 250px;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+main{
+    padding-left: 10pt;
+    grid-area: main;
+}
+
+aside{
+    justify-content: center;
+    grid-area: side;
+}
+
+.addButton{
+    width: 20vw;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.asideborder{
+    background-color: #e0e0e0;
+    height: 200vh;
+}
+
+.DIYborder{
+    background-color: #e0e0e0;
+}
+
+.row{
+    padding-top: 10px;
+}
+
+.DIYImg{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.DIYName{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
