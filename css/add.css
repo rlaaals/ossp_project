@@ -1,0 +1,51 @@
+.addBox{
+    margin: 80px;
+}
+
+.browse{
+    width: 150px;
+    height: 40px;
+    border: 1pt solid black;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.imgBox{
+    display: flex;
+}
+
+.chooseType{
+    width: 180px;
+    height: 30px;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.addButton{
+    margin-top: 30px;
+    width: 150px;
+    height: 60px;
+    font-size: 2.2em;
+}
+
+img{
+    width: 500px;
+    height: 600px;
+    border: 1pt solid black;
+    margin-right: 200px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+h5{
+    font-size: 1.4em;
+    font-weight: lighter;
+    margin: 5px;
+}
