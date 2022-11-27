@@ -1,8 +1,8 @@
 #todays-look{
     background: white;
     margin: auto;
-    padding: 10px;
-    border: 10px solid lightgray;
+    padding: 20px;
+    border: 15px solid lightgray;
 }
 #codi-list{
     margin: 10px;
@@ -17,15 +17,72 @@ img {
 }
 .codi-h5{
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 300px;
+    margin-top: 30px;
 }
-.codi-button1{
+.codi-buttons{
     display: flex;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 300px;
+    margin-right: auto;
+    
 }
 button{
     margin: 4px;
+}
+#codi-button-spring{
+    top:50%;
+    background-color:#eaadde;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    
+    
+}
+#codi-button-summer{
+    top:50%;
+    background-color:#9fd4f5;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    
+}
+#codi-button-autumn{
+    top:50%;
+    background-color:#eaca7e;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    
+}
+#codi-button-winter{
+    top:50%;
+    background-color:#a8c8dc;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    margin-right:265px;
+    
+}
+.codi-button1{
+    top:50%;
+    background-color:#0a0a23;
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:300px;
+    margin-top: 15px;
 }
 .codi-button2{
     top:50%;
@@ -35,5 +92,27 @@ button{
     color: #fff;
     border:none;
     border-radius:10px;
-   margin-left:auto;
+    margin-left:auto;
+    margin-right:300px;
+}
+#codi-button-yes{
+    top:50%;
+    background-color:#0a0a23;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    
+    
+}
+#codi-button-no{
+    top:50%;
+    background-color:#0a0a23;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    margin-right:auto;
 }
