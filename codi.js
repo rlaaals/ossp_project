@@ -17,6 +17,8 @@ let clothes = [];
 let file;
 let value;
 let text;
+let season;
+
 function loadFile(input) {
     var selectFile = input.files[0];	//선택된 파일 가져오기
     file = URL.createObjectURL(selectFile);
@@ -37,8 +39,28 @@ const chageLangSelect = (target) => {
 
 let cloth = {
     image: file,
-    //Season: ,
+    Season: season,
     Position: value,
 };
 
+/* save the checkbox value into variable called season */ 
 
+function getCheckboxValue(event)  {
+    season = '';
+    if(event.target.checked)  {
+      season = event.target.value;
+    }else {
+      season = '';
+    }
+}
+
+/* allow user to check only one box */ 
+
+function checkOnlyOne(element){
+    const checkboxes = document.getElementsByName("season");
+    
+    checkboxes.forEach((cb) => {
+        cb.checked = false;
+    })
+    element.checked = true;
+}
