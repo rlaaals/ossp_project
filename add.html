@@ -18,6 +18,7 @@
 
         <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
         <img src="" class="uploadImage">
+        
         <div class="imgBox">
             <!--<img src="./images/hat.jpeg" alt="hat">-->
             <div class="imgType">
@@ -34,7 +35,7 @@
                 <h5><input type="checkbox" name="season" value="Summer" onclick="getCheckboxValue(event); checkOnlyOne(this)">&nbsp;Summer</h5>
                 <h5><input type="checkbox" name="season" value="Autumn" onclick="getCheckboxValue(event); checkOnlyOne(this)">&nbsp;Autumn</h5>
                 <h5><input type="checkbox" name="season" value="Winter" onclick="getCheckboxValue(event); checkOnlyOne(this)">&nbsp;Winter</h5>
-                <input class="addButton" type="button" value="ADD">
+                <input id = "clothAdd", class="addButton" type="button" value="ADD" onclick="AddCloth(event);">
             </div>
         </div>
     </div>
