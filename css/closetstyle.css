@@ -238,3 +238,15 @@ aside{
     padding-inline-end: 70px;
 }
 
+#spring{
+    display: none;
+}
+#summer{
+    display: none;
+}
+#autumn{
+    display: none;
+}
+#winter{
+    display: none;
+}
