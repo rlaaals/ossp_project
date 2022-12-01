@@ -9,6 +9,7 @@
 		crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="codistyle.css">
+    <script src="codi.js"></script>
 
 </head>
 <body>
@@ -16,25 +17,25 @@
         <a class="navbar_logo">
             <strong>TODAY's LOOK</strong>
         </a>
-        <button id="ClosetBtn">Closet</button>
-        <button id="CodiBtn"><strong>Codi</strong></button>
-        <button id="FavoriteBtn">Favorite</button>
+        <button id="ClosetBtn" onclick="location.href='closet.html'">Closet</button>
+        <button id="CodiBtn" onclick="location.href='codi.html'"><strong>Codi</strong></button>
+        <button id="FavoriteBtn" onclick="location.href='favorite.html'">Favorite</button>
     </nav>
     <div id="todays-look">
         <div id="codi-list"> 
-            <img src="top1.jpg"/>
-            <img src="top1.jpg"/>
-            <img src="top1.jpg"/>
-            <img src="top1.jpg"/>
-            <img src="top1.jpg"/>
+            <img id = "codiCloth1" src="top1.jpg"/>
+            <img id = "codiCloth2" src="top1.jpg"/>
+            <img id = "codiCloth3" src="top1.jpg"/>
+            <img id = "codiCloth4" src="top1.jpg"/>
+            <img id = "codiCloth5" src="top1.jpg"/>
             <div style="text-align: right">
-                <button class = "codi-button1">ADD FAVORITE</button>
+                <button class = "codi-button1" onclick="AddCodi(event);">ADD FAVORITE</button>
             </div>
         </div>
         <div>
             <h5 class="codi-h5">Season</h5>
-            <div class = "codi-buttons">
-                <button id = "codi-button-spring">Spring</button>
+            <div id = "codiSeasonChoose" class = "codi-buttons">
+                <button id = "codi-button-spring" onclick="clickCodiSpring (event);">Spring</button>
                 <button id = "codi-button-summer">Summer</button>
                 <button id = "codi-button-autumn">Autumn</button>
                 <button id = "codi-button-winter">Winter</button>
@@ -44,8 +45,8 @@
         <div>
             <h5 class="codi-h5">Wear a cap or not</h5>
             <div class = "codi-buttons">
-                <button id = "codi-button-yes">YES</button>
-                <button id = "codi-button-no">NO</button>
+                <button id = "codi-button-yes" onclick="clickCodiYes(event);">YES</button>
+                <button id = "codi-button-no" onclick="clickCodiNo(event);">NO</button>
                 <button class = "codi-button2">MAKE CODI</button>
             </div>
             
