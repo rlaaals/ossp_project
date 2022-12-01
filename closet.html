@@ -4,7 +4,7 @@
         <title>Your Closet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href="closetstyle.css">
+        <link rel = "stylesheet" href="./css/closetstyle.css">
         <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
         <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel = "stylesheet" crossorigin = "anonymous">
         <link href = "https://fonts.google.com/earlyaccess/notosanskr.css" rel = "stylesheet">
@@ -26,150 +26,463 @@
             <div class="dropdown">
                 <button class="dropbtn">Spring</button>
                 <div class="dropdown-content">
-                    <a href="#">Outer</a>
-                    <a href="#">Top</a>
-                    <a href="#">Bottom</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Cap</a>
+                    <a href="javascript:springOuter();">Outer</a>
+                    <a href="javascript:springTop();">Top</a>
+                    <a href="javascript:springBottom();">Bottom</a>
+                    <a href="javascript:springShoes();">Shoes</a>
+                    <a href="javascript:springCap();">Cap</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Summer</button>
                 <div class="dropdown-content">
-                    <a href="#">Outer</a>
-                    <a href="#">Top</a>
-                    <a href="#">Bottom</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Cap</a>
+                    <a href="javascript:summerOuter();">Outer</a>
+                    <a href="javascript:summerTop();">Top</a>
+                    <a href="javascript:summerBottom();">Bottom</a>
+                    <a href="javascript:summerShoes();">Shoes</a>
+                    <a href="javascript:summerCap();">Cap</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Autumn</button>
                 <div class="dropdown-content">
-                    <a href="#">Outer</a>
-                    <a href="#">Top</a>
-                    <a href="#">Bottom</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Cap</a>
+                    <a href="javascript:autumnOuter();">Outer</a>
+                    <a href="javascript:autumnTop();">Top</a>
+                    <a href="javascript:autumnBottom();">Bottom</a>
+                    <a href="javascript:autumnShoes();">Shoes</a>
+                    <a href="javascript:autumnCap();">Cap</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Winter</button>
                 <div class="dropdown-content">
-                    <a href="#">Outer</a>
-                    <a href="#">Top</a>
-                    <a href="#">Bottom</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Cap</a>
+                    <a href="javascript:winterOuter();">Outer</a>
+                    <a href="javascript:winterTop();">Top</a>
+                    <a href="javascript:winterBottom();">Bottom</a>
+                    <a href="javascript:winterShoes();">Shoes</a>
+                    <a href="javascript:winterCap();">Cap</a>
                 </div>
             </div>
 
-            <div class="closet-box">
-                <h5 id="Outer">-Outer-</h5>
-                <div class="row">
 
-                    <div class="card cloth" id = "clothBox">
-                        <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
-                        
-                            
+            <div id="spring">
+
+                <div class="closet-box" id="springOuter">
+                    <h5>-Spring Outer-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
                                 <button class="Selectbtn">Select</button>
-                            
-                            
                                 <button class="Deletebtn">Delete</button>
-                            
-                            
+                            </div>
                         </div>
-                    </div>
-                    
-
-
-                </div> 
-            </div>
-
-            <div class="closet-box">
-                <h5 id="Top">-Top-</h5>
-                <div class="row">
-
-                    <div class="card cloth" id = "clothBox">
-                        <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
-                            <div class ="row">
-                            <div class = "col text-center">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
                                 <button class="Selectbtn">Select</button>
-                            </div>
-                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="closet-box" id="springTop">
+                    <h5>-Spring Top-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="springBottom">
+                    <h5>-Spring Bottom-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="springShoes">
+                    <h5>-Spring Shoes-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="springCap">
+                    <h5>-Spring Cap-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="closet-box">
-                <h5 id="Bottom">-Bottom-</h5>
-                <div class="row">
 
-                    <div class="card cloth" id = "clothBox">
-                        <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
-                            <div class ="row">
-                            <div class = "col text-center">
+            <div id="summer">
+
+                <div class="closet-box" id="summerOuter">
+                    <h5>-Summer Outer-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
                                 <button class="Selectbtn">Select</button>
-                            </div>
-                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
 
-            <div class="closet-box">
-                <h5 id="Shoes">-Shoes-</h5>
-                <div class="row">
-
-                    <div class="card cloth" id = "clothBox">
-                        <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
-                            <div class ="row">
-                            <div class = "col text-center">
+                <div class="closet-box" id="summerTop">
+                    <h5>-Summer Top-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
                                 <button class="Selectbtn">Select</button>
-                            </div>
-                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
 
-            <div class="closet-box">
-                <h5 id="Cap">-Cap-</h5>
-                <div class="row">
-
-                    <div class="card cloth" id = "clothBox">
-                        <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
-                            <div class ="row">
-                            <div class = "col text-center">
+                <div class="closet-box" id="summerBottom">
+                    <h5>-Summer Bottom-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
                                 <button class="Selectbtn">Select</button>
-                            </div>
-                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+
+                <div class="closet-box" id="summerShoes">
+                    <h5>-Summer Shoes-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="summerCap">
+                    <h5>-Summer Cap-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div id="autumn">
+
+                <div class="closet-box" id="autumnOuter">
+                    <h5>-Autumn Outer-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="autumnTop">
+                    <h5>-Autumn Top-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="autumnBottom">
+                    <h5>-Autumn Bottom-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="autumnShoes">
+                    <h5>-Autumn Shoes-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="autumnCap">
+                    <h5>-Autumn Cap-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="winter">
+
+                <div class="closet-box" id="winterOuter">
+                    <h5>-Winter Outer-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="winterTop">
+                    <h5>-Winter Top-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="winterBottom">
+                    <h5>-Winter Bottom-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="winterShoes">
+                    <h5>-Winter Shoes-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closet-box" id="winterCap">
+                    <h5>-Winter Cap-</h5>
+                    <div class="row">
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card cloth" id = "clothBox">
+                            <img class="card-img-top" id = "clothImage" src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fff%2F70%2Fff70d7e595a6b7035d26809ea7bc6fa571162391.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="Cloth image">
+                            <div class="card-body" id = "clothBoxBody">
+                                <button class="Selectbtn">Select</button>
+                                <button class="Deletebtn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
 
         <aside>
@@ -215,6 +528,6 @@
             </select>
             <button class="AddFavoriteBtn">Add Favorite</button>
         </aside>
-
+        <script type="text/javascript" src="./scripts/showCloset.js"></script>
     </body>
 </html>
