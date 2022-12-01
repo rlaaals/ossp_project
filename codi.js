@@ -38,7 +38,7 @@ const chageLangSelect = (target) => {
   }
 
 let cloth = {
-    image: file,
+    image: file, //./images/
     Season: season,
     Position: value,
 };
