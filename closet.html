@@ -519,14 +519,14 @@
                 
             </div>   
                 
-            <select class="Choose_Season" name="type">
+            <select class="Choose_Season" name="type" onchange="AddFavoriteSeason(this)">
                 <option value="none">Select Season</option>
                 <option value="Spring">Spring</option>
                 <option value="Summer">Summer</option>
                 <option value="Autumn">Autumn</option>
                 <option value="Winter">Winter</option>
             </select>
-            <button class="AddFavoriteBtn">Add Favorite</button>
+            <button class="AddFavoriteBtn" onclick="AddCodi(event);">Add Favorite</button>
         </aside>
         <script type="text/javascript" src="./scripts/showCloset.js"></script>
     </body>

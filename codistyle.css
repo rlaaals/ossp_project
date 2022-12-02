@@ -13,6 +13,7 @@
     border: none;
 }
 
+
 #ClosetBtn,
 #CodiBtn,
 #FavoriteBtn{
@@ -114,6 +115,9 @@ button{
     border-radius:10px;
     margin-right:265px;
     
+}
+.menu-active {
+    color: #0a0a23;
 }
 .codi-button1{
     top:50%;
