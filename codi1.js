@@ -155,43 +155,49 @@ function addToList (){
 }
 
 function addToListCodies (){
+    console.log("HI");
     for (var cod in codies){
         let findElement = codies[cod].Season + "One";
         console.log(findElement);
         let springselect = document.getElementById(findElement);
         console.log("important!!");
-        console.log(codies.clothNum);
+        console.log(codies[cod].clothNum[0]);
 
         let makeDiv = document.createElement("div");
         makeDiv.className = "codiBox"
         springselect.appendChild(makeDiv);
         
         let makeDiv2 = document.createElement("div");
-        
         makeDiv2.className = "oneCodi";
-    
         makeDiv.appendChild(makeDiv2);
 
         let makeImg1 = document.createElement("img");
-        makeImage.src = codies.clothNum[0];
+        makeImg1.src = codies[cod].clothNum[0];
         makeDiv2.appendChild(makeImg1);
 
         let makeImg2 = document.createElement("img");
-        makeImg2.src = codies.clothNum[1];
+        makeImg2.src = codies[cod].clothNum[1];
         makeDiv2.appendChild(makeImg2);
 
         let makeImg3 = document.createElement("img");
-        mmakeImg3.src = codies.clothNum[2];
+        makeImg3.src = codies[cod].clothNum[2];
         makeDiv2.appendChild(makeImg3);
 
         let makeImg4 = document.createElement("img");
-        makeImg4.src = codies.clothNum[3];
+        makeImg4.src = codies[cod].clothNum[3];
         makeDiv2.appendChild(makeImg4);
 
         let makeImg5 = document.createElement("img");
-        makeImg5.src = codies.clothNum[4];
+        makeImg5.src = codies[cod].clothNum[4];
         makeDiv2.appendChild(makeImg5);
 
+        let makeButton1 = document.createElement("button");
+        makeButton1.className = "deleteButton";
+        makeButton1.textContent = "Delete";
+        makeButton1.addEventListener("click", ()=>{
+            makeDiv.remove();
+        });
+        makeDiv.appendChild(makeButton1);
         
     }
 }
@@ -207,7 +213,7 @@ let saveCodiSeason;
 let codiHasCap = 0;
 //codi.html
 function clickCodiSpring (event){
-    let springselect = document.getElementById("codi-button-spring");
+    let springselect = document.getElementById();
     let summerselect = document.getElementById("codi-button-summer");
     let autumnselect = document.getElementById("codi-button-autumn");
     let winterselect = document.getElementById("codi-button-winter");
@@ -278,7 +284,7 @@ function MakeCodi (event){
     //console.log(makeCodiArray1);
     let makeCodiArray2 = [];
     let choose = [];
-    for (let i = 0; i < 4 + codiHasCap; i++){
+    for (let i = 0; i < 5; i++){
         makeCodiArray2 = [];
         for (var j in makeCodiArray1){
             let whatIsPosition;
@@ -308,6 +314,7 @@ function MakeCodi (event){
     codiCloth2.src = choose[1].image;
     codiCloth3.src = choose[2].image;
     codiCloth4.src = choose[3].image;
+    console.log(choose[3].image);
     if (codiHasCap == 1){
         codiCloth5.src = choose[4].image;
     }
@@ -330,11 +337,12 @@ function AddCodi(event){
     codi.clothNum.push(codiImg3);
     let codiImg4 = document.querySelector("#codiCloth4").src;
     codi.clothNum.push(codiImg4);
-    if (codiHasCap == 1){
+    
         let codiImg5 = document.querySelector("#codiCloth5").src;
         codi.clothNum.push(codiImg5);
-    }
+    
     console.log(codi);
+    codies.push(codi);
     //console.log(codi.clothNum);
     saveCodis();
     addToListCodies();
