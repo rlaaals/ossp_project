@@ -16,9 +16,10 @@
                 <a class="navbar_logo">
                     <strong>TODAY's LOOK</strong>
                 </a>
-                <button id="ClosetBtn"><strong>Closet</strong></button>
-                <button id="CodiBtn">Codi</button>
-                <button id="FavoriteBtn">Favorite</button>
+                <button id="ClosetBtn" onclick="location.href='closet.html'">Closet</button>
+                <button id="CodiBtn" onclick="location.href='codi.html'"><strong>Codi</strong></button>
+                <button id="FavoriteBtn" onclick="location.href='favorite.html'">Favorite</button>
+            
             </nav>
         </header>
 
@@ -72,7 +73,7 @@
 
                 <div class="closet-box" id="springOuter">
                     <h5>-Spring Outer-</h5>
-                    <div class="row">
+                    <div id = "Spring Outer" class="row">
                         <div class="card cloth" id = "clothBox">
                             <img class="card-img-top" id = "clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
                             <div class="card-body" id = "clothBoxBody">
@@ -790,7 +791,7 @@
         </section>
 
         <aside>
-            <button class="addButton"><i class="bi bi-plus"></i> Add</button>
+            <button class="addButton" onclick ="location.href='add.html'" ><i class="bi bi-plus"></i> Add</button>
             <h5 id="DIY">-DIY set-</h5>
             <div class="DIY-box">
                 <div class="card cloth" id = "clothBox">

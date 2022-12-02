@@ -98,11 +98,68 @@ function AddCloth(event){
     };
     console.log(cloth.Position, cloth.Season, cloth.image);
     clothes.push(cloth);
+    console.log(clothes);
     saveClothes();
-
     
     location.href='closet.html';
+    
 }
+function loadCloths() {
+    console.log("load");
+    let lastTasks = localStorage.getItem("tasks");
+    if (!lastTasks) {
+        console.log("hi");
+    }
+    else{
+        tasks = JSON.parse(lastTasks);
+        tasks.forEach(addToList);
+    }
+    
+}
+
+function addToList (){
+    for (var clo in clothes){
+        let findElement = clo.season + " " + clo.text;
+    
+        let springselect = "closet.html".getElementById("Spring Outer");
+        console.log("closet");
+        console.log(springselect);
+
+        let makeDiv = document.createElement("div");
+        makeDiv.className = "card cloth clothBox"
+        springselect.appendChild(makeDiv);
+
+        let makeImage = document.createElement("img");
+        makeImage.src = cloth.image;
+        makeImage.class = "card-img-top clothImage";
+        makeImage.id = "";
+        makeImage.alt = "Cloth image";
+        makeDiv.appendChild(makeImage);
+
+        let makeDiv2 = document.createElement("div");
+        makeDiv2.className = "card-body"
+        makeDiv2.className = "clothBoxBody"
+        makeDiv.appendChild(makeDiv2);
+
+        let makeDiv3 = document.createElement("div");
+        makeDiv3.className = "col";
+        makeDiv2.appendChild(makeDiv3);
+
+        let makeButton = document.createElement("button");
+        makeButton.className = "Selectbtn";
+        makeDiv3.appendChild(makeButton);
+
+        let makeButton1 = document.createElement("button");
+        makeButton1.className = "Deletebtn";
+        makeDiv3.appendChild(makeButton);
+    }
+}
+window.addEventListener("load", () => {
+    loadCloths();
+    
+    
+});
+
 
 //closet.html select codi season
 const AddFavoriteSeason = (target) => {
