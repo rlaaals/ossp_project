@@ -12,10 +12,12 @@
     text-align: center;
     
 }
-img {
+
+.codiC{
     border: 1px solid #ddd;
     padding: 5px;
-    
+    width: 200px;
+    height: 270px;
 }
 .codi-h5{
     padding: 10px;

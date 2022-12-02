@@ -23,15 +23,14 @@
                     <a class="navbar_logo">
                         <strong>TODAY's LOOK</strong>
                     </a>
-                    <button id="ClosetBtn" onclick="closetBlock();">Closet</button>
-                    <button id="CodiBtn" onclick="codiBlock();"><strong>Codi</strong></button>
+                    <button id="ClosetBtn" onclick="closetBlock();"><strong>Closet</strong></button>
+                    <button id="CodiBtn" onclick="codiBlock();">Codi</button>
                     <button id="FavoriteBtn" onclick="favoriteBlock();">Favorite</button>
                 </nav>
             </header>
     
             <section>
                 <div class="buttonBox">
-                <button class="dropbtn">All</button>
                 <div class="dropdown">
                     <button class="dropbtn">Spring</button>
                     <div class="dropdown-content">
@@ -832,11 +831,11 @@
         </nav>
         <div id="todays-look">
             <div id="codi-list"> 
-                <img id = "codiCloth1" src="top1.jpg"/>
-                <img id = "codiCloth2" src="top1.jpg"/>
-                <img id = "codiCloth3" src="top1.jpg"/>
-                <img id = "codiCloth4" src="top1.jpg"/>
-                <img id = "codiCloth5" src="top1.jpg"/>
+                <img class="codiC" id = "codiCloth1" src="top1.jpg"/>
+                <img class="codiC" id = "codiCloth2" src="top1.jpg"/>
+                <img class="codiC" id = "codiCloth3" src="top1.jpg"/>
+                <img class="codiC" id = "codiCloth4" src="top1.jpg"/>
+                <img class="codiC" id = "codiCloth5" src="top1.jpg"/>
                 <div style="text-align: right">
                     <button class = "codi-button1" onclick="AddCodi(event);">ADD FAVORITE</button>
                 </div>
@@ -870,17 +869,15 @@
 
         <div class="addBox">
             <h1>ADD TO CLOSET</h1>
-            <div class="button">
-                <label for="chooseFile">
-                    <div class="btn-upload">파일 업로드하기</div>
-                </label>
-            </div>
-    
-            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-            <img src="" class="uploadImage">
-            
             <div class="imgBox">
                 <!--<img src="./images/hat.jpeg" alt="hat">-->
+                <div style="margin-right:200px;" class="button">
+                    <label for="chooseFile">
+                        <div class="btn-upload">파일 업로드하기</div><br>
+                    </label>
+                    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)"><br>
+                    <img style="width:400px; height:500px;" src="" class="uploadImage">
+                </div>
                 <div class="imgType">
                     <h3>Type:</h3>
                     <select id="choosetype" class="chooseType" onchange="chageLangSelect(this)">
