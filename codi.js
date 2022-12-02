@@ -20,6 +20,12 @@ let value;
 let text;
 let season;
 let clothNum = [];
+
+//폴더 경로
+let directoryName = "./images/"
+let imageName;
+let imageRoute;
+
 //옷들을 모아놓은 array 저장
 function saveClothes(){
     localStorage.setItem("clothes", JSON.stringify(clothes));
@@ -35,7 +41,9 @@ function loadFile(input) {
     //fileReader.readAsDataURL(selectedFile[0]);
     //console.log(fileReader.result);
     var selectFile = input.files[0];	//선택된 파일 가져오기
-    console.log(selectFile);
+    imageName = selectFile.name;
+    imageRoute = directoryName + imageName;
+    console.log(imageRoute);
     file = URL.createObjectURL(selectFile);
     document.querySelector(".uploadImage").src = file;
 
@@ -83,8 +91,9 @@ function checkOnlyOne(element){
 
 //add.html add버튼 눌렀을 때 옷 변수 만들기
 function AddCloth(event){
+    
     let cloth = {
-        image: file,
+        image: imageRoute,
         Season: season,
         Position: text,
     };
