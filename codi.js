@@ -95,8 +95,13 @@ function AddCloth(event){
     clothes.push(cloth);
     console.log(clothes);
     saveClothes();
-     
-    location.href='closet.html';
+    
+    let lastTasks = localStorage.getItem("tasks");
+    if (!lastTasks) {
+        console.log("hi");
+    }
+    addToList();
+    closetBlock();
     
 }
 function loadCloths() {
@@ -104,6 +109,7 @@ function loadCloths() {
     let lastTasks = localStorage.getItem("tasks");
     if (!lastTasks) {
         console.log("hi");
+        return;
     }
     else{
         tasks = JSON.parse(lastTasks);
@@ -116,16 +122,17 @@ function addToList (){
     for (var clo in clothes){
         let findElement = clo.season + " " + clo.text;
     
-        let springselect = "closet.html".getElementById(findElement);
-        console.log("closet");
-        console.log(springselect);
+        let springselect = document.getElementById("Spring Outer");
+        console.log("important!!");
+        console.log(clo);
+        console.log(clo.image);
 
         let makeDiv = document.createElement("div");
         makeDiv.className = "card cloth clothBox"
         springselect.appendChild(makeDiv);
-
+        
         let makeImage = document.createElement("img");
-        makeImage.src = cloth.image;
+        makeImage.src = clothes[clo].image;
         makeImage.class = "card-img-top clothImage";
         makeImage.id = "";
         makeImage.alt = "Cloth image";
@@ -146,13 +153,11 @@ function addToList (){
 
         let makeButton1 = document.createElement("button");
         makeButton1.className = "Deletebtn";
-        makeDiv3.appendChild(makeButton);
+        makeDiv3.appendChild(makeButton1);
     }
 }
 window.addEventListener("load", () => {
     loadCloths();
-    
-    
 });
 
 
