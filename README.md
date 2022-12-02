@@ -3,7 +3,7 @@ Today's look is a web application which can help people codi themselves.
 Today's look can provide you the random combination from your clothes in your closet
 
 # Login page
-In order to do the things mentioned above, you have to first signup and login.
+In order to do the things mentioned above, you have to first signup and login. Click login.html.
 
 # Closet page
 After you login, you will enter to "closet" page, at first you can see there are just some buttons and nothing else.
