@@ -18,902 +18,865 @@
 
         <div class="closetBody">
 
-        <header>
-            <nav class="navbar">
-                <a class="navbar_logo">
-                    <strong>TODAY's LOOK</strong>
-                </a>
-<<<<<<< HEAD
-                <button id="ClosetBtn" onclick="closetBlock();"><strong>Closet</strong></button>
-                <button id="CodiBtn" onclick="codiBlock();">Codi</button>
-                <button id="FavoriteBtn" onclick="favoriteBlock();">Favorite</button>
-=======
-                <button id="ClosetBtn" onclick="location.href='closet.html'">Closet</button>
-                <button id="CodiBtn" onclick="location.href='codi.html'"><strong>Codi</strong></button>
-                <button id="FavoriteBtn" onclick="location.href='favorite.html'">Favorite</button>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-            </nav>
-        </header>
-
-        <section>
-            <div class="buttonBox">
-            <button class="dropbtn">All</button>
-            <div class="dropdown">
-                <button class="dropbtn">Spring</button>
-                <div class="dropdown-content">
-                    <a href="javascript:springOuter();">Outer</a>
-                    <a href="javascript:springTop();">Top</a>
-                    <a href="javascript:springBottom();">Bottom</a>
-                    <a href="javascript:springShoes();">Shoes</a>
-                    <a href="javascript:springCap();">Cap</a>
-                </div>
-            </div>
+            <header>
+                <nav class="navbar">
+                    <a class="navbar_logo">
+                        <strong>TODAY's LOOK</strong>
+                    </a>
+                    <button id="ClosetBtn" onclick="closetBlock();">Closet</button>
+                    <button id="CodiBtn" onclick="codiBlock();"><strong>Codi</strong></button>
+                    <button id="FavoriteBtn" onclick="favoriteBlock();">Favorite</button>
+                </nav>
+            </header>
+    
+            <section>
+                <div class="buttonBox">
+                <button class="dropbtn">All</button>
                 <div class="dropdown">
-                    <button class="dropbtn">Summer</button>
+                    <button class="dropbtn">Spring</button>
                     <div class="dropdown-content">
-                        <a href="javascript:summerOuter();">Outer</a>
-                        <a href="javascript:summerTop();">Top</a>
-                        <a href="javascript:summerBottom();">Bottom</a>
-                        <a href="javascript:summerShoes();">Shoes</a>
-                        <a href="javascript:summerCap();">Cap</a>
+                        <a href="javascript:springOuter();">Outer</a>
+                        <a href="javascript:springTop();">Top</a>
+                        <a href="javascript:springBottom();">Bottom</a>
+                        <a href="javascript:springShoes();">Shoes</a>
+                        <a href="javascript:springCap();">Cap</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Autumn</button>
-                    <div class="dropdown-content">
-                        <a href="javascript:autumnOuter();">Outer</a>
-                        <a href="javascript:autumnTop();">Top</a>
-                        <a href="javascript:autumnBottom();">Bottom</a>
-                        <a href="javascript:autumnShoes();">Shoes</a>
-                        <a href="javascript:autumnCap();">Cap</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Summer</button>
+                        <div class="dropdown-content">
+                            <a href="javascript:summerOuter();">Outer</a>
+                            <a href="javascript:summerTop();">Top</a>
+                            <a href="javascript:summerBottom();">Bottom</a>
+                            <a href="javascript:summerShoes();">Shoes</a>
+                            <a href="javascript:summerCap();">Cap</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Autumn</button>
+                        <div class="dropdown-content">
+                            <a href="javascript:autumnOuter();">Outer</a>
+                            <a href="javascript:autumnTop();">Top</a>
+                            <a href="javascript:autumnBottom();">Bottom</a>
+                            <a href="javascript:autumnShoes();">Shoes</a>
+                            <a href="javascript:autumnCap();">Cap</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Winter</button>
+                        <div class="dropdown-content">
+                            <a href="javascript:winterOuter();">Outer</a>
+                            <a href="javascript:winterTop();">Top</a>
+                            <a href="javascript:winterBottom();">Bottom</a>
+                            <a href="javascript:winterShoes();">Shoes</a>
+                            <a href="javascript:winterCap();">Cap</a>
+                        </div>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Winter</button>
-                    <div class="dropdown-content">
-                        <a href="javascript:winterOuter();">Outer</a>
-                        <a href="javascript:winterTop();">Top</a>
-                        <a href="javascript:winterBottom();">Bottom</a>
-                        <a href="javascript:winterShoes();">Shoes</a>
-                        <a href="javascript:winterCap();">Cap</a>
+    
+    
+                <div id="spring">
+    
+                    <div class="closet-box" id="springOuter">
+                        <h5>-Spring Outer-</h5>
+                        <div id = "Spring Outer" class="row">
+                            <div class="clothBox">
+                                <img class="clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                            <div class="clothBox">
+                                <img class="clothImage" src="./images/spring_outer1.jpg" alt="Cloth image">
+                                <div class="clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                            <div class="clothBox">
+                                <img class="clothImage" src="./images/spring_outer2.jpg" alt="Cloth image">
+                                <div class="clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                            <div class="clothBox">
+                                <img class="clothImage" src="./images/spring_outer3.jpg" alt="Cloth image">
+                                <div class="clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                            <div class="clothBox">
+                                <img class="clothImage" src="./images/spring_outer4.jpg" alt="Cloth image">
+                                <div class="clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>        
                     </div>
+    
+                    <div class="closet-box" id="springTop">
+                        <h5>-Spring Top-</h5>
+                        <div class="row">
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top5.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top6.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top7.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_top8.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="springBottom">
+                        <h5>-Spring Bottom-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_bottom0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_bottom1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_bottom2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_bottom3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_bottom4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="springShoes">
+                        <h5>-Spring Shoes-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_shoes0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_shoes1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_shoes2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="springCap">
+                        <h5>-Spring Cap-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_hat0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_hat1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_hat2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/spring_hat3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
                 </div>
-            </div>
-
-
-            <div id="spring">
-
-                <div class="closet-box" id="springOuter">
-                    <h5>-Spring Outer-</h5>
-<<<<<<< HEAD
+    
+    
+                <div id="summer">
+    
+                    <div class="closet-box" id="summerOuter">
+                        <h5>-Summer Outer-</h5>
+                        <div class="row">
+    
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerouter1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerouter2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerouter3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerouter4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="summerTop">
+                        <h5>-Summer Top-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summertop1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summertop2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summertop3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summertop4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summertop5.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="summerBottom">
+                        <h5>-Summer Bottom-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerbottom1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerbottom2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerbottom3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summerbottom4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="summerShoes">
+                        <h5>-Summer Shoes-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summershoes1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summershoes2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summershoes3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summershoes4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="summerCap">
+                        <h5>-Summer Cap-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summercap1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summercap2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/summercap3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+                <div id="autumn">
+    
+                    <div class="closet-box" id="autumnOuter">
+                        <h5>-Autumn Outer-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_outer1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_outer2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_outer3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="autumnTop">
+                        <h5>-Autumn Top-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_top1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_top2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="autumnBottom">
+                        <h5>-Autumn Bottom-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="autumnShoes">
+                        <h5>-Autumn Shoes-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="autumnCap">
+                        <h5>-Autumn Cap-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_hat0.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/autumn_hat1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
                     
-                        <div class="clothBox">
-                            <img class="clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
-                            <div class="clothBoxBody">
-                    <div id = "Spring Outer" class="row">
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
-=======
-                    <div id = "Spring Outer" class="row">
-                        <div class="clothBox">
-                            <img class="clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
+                </div>
+    
+    
+                <div id="winter">
+    
+                    <div class="closet-box" id="winterOuter">
+                        <h5>-Winter Outer-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterouter1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterouter2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterouter3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterouter4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="winterTop">
+                        <h5>-Winter Top-</h5>
+                        <div class="row">
+                            
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintertop1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintertop2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintertop3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="winterBottom">
+                        <h5>-Winter Bottom-</h5>
+                        <div class="row">
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterbottom1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterbottom2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterbottom3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterbottom4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/winterbottom5.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="winterShoes">
+                        <h5>-Winter Shoes-</h5>
+                        <div class="row">
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintershoes1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintershoes2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintershoes3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="closet-box" id="winterCap">
+                        <h5>-Winter Cap-</h5>
+                        <div class="row">
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintercap1.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintercap2.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintercap3.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintercap4.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card cloth" id = "clothBox">
+                                <img class="card-img-top" id = "clothImage" src="./images/wintercap5.jpg" alt="Cloth image">
+                                <div class="card-body" id = "clothBoxBody">
+                                    <button class="Selectbtn">Select</button>
+                                    <button class="Deletebtn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+    
+            </section>
+    
+            <aside>
+                <button class="addButton" onclick="addBlock();"><i class="bi bi-plus"></i> Add</button>
+                <h5 id="DIY">-DIY set-</h5>
+                <div class="DIY-box">
+                    <div class="card cloth" id = "clothBox">
+                        <img class="codiOne" id = "clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
+                        <div class="card-body" id = "clothBoxBody">
+                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
-
-                        <div class="clothBox">
-                            <img class="clothImage" src="./images/spring_outer1.jpg" alt="Cloth image">
-                            <div class="clothBoxBody">
-<<<<<<< HEAD
-=======
-                                <button class="Selectbtn">Select</button>
+                    </div>
+    
+                    <div class="card cloth" id = "clothBox">
+                        <img class="codiOne" id = "clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
+                        <div class="card-body" id = "clothBoxBody">
+                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
-
-                        <div class="clothBox">
-                            <img class="clothImage" src="./images/spring_outer2.jpg" alt="Cloth image">
-                            <div class="clothBoxBody">
-                                <button class="Selectbtn">Select</button>
+                    </div>
+    
+                    <div class="card cloth" id = "clothBox">
+                        <img class="codiOne" id = "clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
+                        <div class="card-body" id = "clothBoxBody">
+                            <div class = "col text-center">
                                 <button class="Deletebtn">Delete</button>
                             </div>
                         </div>
-
-                        <div class="clothBox">
-                            <img class="clothImage" src="./images/spring_outer3.jpg" alt="Cloth image">
-                            <div class="clothBoxBody">
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                        <div class="clothBox">
-<<<<<<< HEAD
-                            <img class="clothImage" src="./images/spring_outer2.jpg" alt="Cloth image">
-=======
-                            <img class="clothImage" src="./images/spring_outer4.jpg" alt="Cloth image">
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-                            <div class="clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
+                    </div>
                     
-                    </div>
-=======
-
-                    </div>        
-                </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                <div class="closet-box" id="springTop">
-                    <h5>-Spring Top-</h5>
-                    <div class="row">
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top5.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top6.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top7.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_top8.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="springBottom">
-                    <h5>-Spring Bottom-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_bottom0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_bottom1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_bottom2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_bottom3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_bottom4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="springShoes">
-                    <h5>-Spring Shoes-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_shoes0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_shoes1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_shoes2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="springCap">
-                    <h5>-Spring Cap-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_hat0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_hat1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_hat2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/spring_hat3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div id="summer">
-
-                <div class="closet-box" id="summerOuter">
-                    <h5>-Summer Outer-</h5>
-                    <div class="row">
-
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerouter1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerouter2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerouter3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerouter4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="summerTop">
-                    <h5>-Summer Top-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summertop1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summertop2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summertop3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summertop4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summertop5.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="summerBottom">
-                    <h5>-Summer Bottom-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerbottom1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerbottom2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerbottom3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summerbottom4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="summerShoes">
-                    <h5>-Summer Shoes-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summershoes1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summershoes2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summershoes3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summershoes4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="summerCap">
-                    <h5>-Summer Cap-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summercap1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summercap2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/summercap3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div id="autumn">
-
-                <div class="closet-box" id="autumnOuter">
-                    <h5>-Autumn Outer-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_outer1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_outer2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_outer3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="autumnTop">
-                    <h5>-Autumn Top-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_top1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_top2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="autumnBottom">
-                    <h5>-Autumn Bottom-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_bottom3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="autumnShoes">
-                    <h5>-Autumn Shoes-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_shoes3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="autumnCap">
-                    <h5>-Autumn Cap-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_hat0.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/autumn_hat1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-
-
-            <div id="winter">
-
-                <div class="closet-box" id="winterOuter">
-                    <h5>-Winter Outer-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterouter1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterouter2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterouter3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterouter4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="winterTop">
-                    <h5>-Winter Top-</h5>
-                    <div class="row">
-                        
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintertop1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-=======
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintertop2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintertop3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
->>>>>>> 63f1d33fdf7ed39299a92b94a650121947c6ac99
-
-                    </div>
-                </div>
-
-                <div class="closet-box" id="winterBottom">
-                    <h5>-Winter Bottom-</h5>
-                    <div class="row">
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterbottom1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/winterbottom2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="closet-box" id="winterShoes">
-                    <h5>-Winter Shoes-</h5>
-                    <div class="row">
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintershoes1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintershoes2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintershoes3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="closet-box" id="winterCap">
-                    <h5>-Winter Cap-</h5>
-                    <div class="row">
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintercap1.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintercap2.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintercap3.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintercap4.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card cloth" id = "clothBox">
-                            <img class="card-img-top" id = "clothImage" src="./images/wintercap5.jpg" alt="Cloth image">
-                            <div class="card-body" id = "clothBoxBody">
-                                <button class="Selectbtn">Select</button>
-                                <button class="Deletebtn">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </section>
-
-        <aside>
-            <button class="addButton" onclick="addBlock()"><i class="bi bi-plus"></i> Add</button>
-            <h5 id="DIY">-DIY set-</h5>
-            <div class="DIY-box">
-                <div class="card cloth" id = "clothBox">
-                    <img class="codiOne" id = "clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
-                    <div class="card-body" id = "clothBoxBody">
-                        <div class = "col text-center">
-                            <button class="Deletebtn">Delete</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card cloth" id = "clothBox">
-                    <img class="codiOne" id = "clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
-                    <div class="card-body" id = "clothBoxBody">
-                        <div class = "col text-center">
-                            <button class="Deletebtn">Delete</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card cloth" id = "clothBox">
-                    <img class="codiOne" id = "clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
-                    <div class="card-body" id = "clothBoxBody">
-                        <div class = "col text-center">
-                            <button class="Deletebtn">Delete</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>   
-                
-            <select class="Choose_Season" name="type">
-                <option value="none">Select Season</option>
-                <option value="Spring">Spring</option>
-                <option value="Summer">Summer</option>
-                <option value="Autumn">Autumn</option>
-                <option value="Winter">Winter</option>
-            </select>
-            <button class="AddFavoriteBtn">Add Favorite</button>
-        </aside>
+                </div>   
+                    
+                <select class="Choose_Season" name="type">
+                    <option value="none">Select Season</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Autumn">Autumn</option>
+                    <option value="Winter">Winter</option>
+                </select>
+                <button class="AddFavoriteBtn">Add Favorite</button>
+            </aside>    
 
     </div>
 
