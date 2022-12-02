@@ -122,24 +122,27 @@ h5{
 
 .closet-box{
     width: 100%;
+    overflow: auto;
+    float : left;
+    display: flex;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
 }
 
 
-#clothBox{
-    width: 10rem;
-    height: 15rem;
+.clothBox{
+    width: 200px;
+    height: 250px;
 }
 
 .clothImage{
-    width: 8rem;
-    height: 9rem;
+    width: 180px;
+    height: 200px;
 }
 
-#clothBoxBody{
-    width: 10rem;
-    height: 6rem;
+.clothBoxBody{
+    width: 180px;
+    height: 34px;
 }
 
 .col{
