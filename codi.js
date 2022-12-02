@@ -96,10 +96,7 @@ function AddCloth(event){
     console.log(clothes);
     saveClothes();
     
-    let lastTasks = localStorage.getItem("tasks");
-    if (!lastTasks) {
-        console.log("hi");
-    }
+   
     addToList();
     closetBlock();
     
@@ -120,40 +117,35 @@ function loadCloths() {
 
 function addToList (){
     for (var clo in clothes){
-        let findElement = clo.season + " " + clo.text;
-    
-        let springselect = document.getElementById("Spring Outer");
+        let findElement = clothes[clo].Season + " " + clothes[clo].Position;
+        console.log(findElement);
+        let springselect = document.getElementById(findElement);
         console.log("important!!");
-        console.log(clo);
-        console.log(clo.image);
+        console.log(clothes[clo].image);
 
         let makeDiv = document.createElement("div");
-        makeDiv.className = "card cloth clothBox"
+        makeDiv.className = "clothBox"
         springselect.appendChild(makeDiv);
         
         let makeImage = document.createElement("img");
         makeImage.src = clothes[clo].image;
-        makeImage.class = "card-img-top clothImage";
-        makeImage.id = "";
+        makeImage.className = "clothImage";
         makeImage.alt = "Cloth image";
         makeDiv.appendChild(makeImage);
 
         let makeDiv2 = document.createElement("div");
-        makeDiv2.className = "card-body"
         makeDiv2.className = "clothBoxBody"
         makeDiv.appendChild(makeDiv2);
 
-        let makeDiv3 = document.createElement("div");
-        makeDiv3.className = "col";
-        makeDiv2.appendChild(makeDiv3);
-
         let makeButton = document.createElement("button");
         makeButton.className = "Selectbtn";
-        makeDiv3.appendChild(makeButton);
+        makeButton.textContent = "Select"
+        makeDiv2.appendChild(makeButton);
 
         let makeButton1 = document.createElement("button");
         makeButton1.className = "Deletebtn";
-        makeDiv3.appendChild(makeButton1);
+        makeButton1.textContent = "Delete";
+        makeDiv2.appendChild(makeButton1);
     }
 }
 window.addEventListener("load", () => {
