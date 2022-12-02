@@ -19,6 +19,7 @@ Add to closet page is basically able add clothes to your closet, so that applica
   3. Choose whether the cloth is Outer, Top, Bottom, Shoes, Cap(Hat)
   4. Click the ADD button to add and the save cloth into the closet
 
-
+# Favorite page
+Favorite page is where you save the codi which appeals to you.
  
 
