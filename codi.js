@@ -95,7 +95,7 @@ function AddCloth(event){
     clothes.push(cloth);
     console.log(clothes);
     saveClothes();
-    
+     
     location.href='closet.html';
     
 }
@@ -116,7 +116,7 @@ function addToList (){
     for (var clo in clothes){
         let findElement = clo.season + " " + clo.text;
     
-        let springselect = "closet.html".getElementById("Spring Outer");
+        let springselect = "closet.html".getElementById(findElement);
         console.log("closet");
         console.log(springselect);
 
