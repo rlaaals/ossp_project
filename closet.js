@@ -87,12 +87,6 @@ function addToFavoriteBox(){
 
 }
 
-let choosetype = document.getElementById("choosetype");
 let selectText;
 let selectValue;
-const chageLangSelect = (target) => {
-    value = target.value;
-    text =  target.options[target.selectedIndex].text;
-    
-    console.log(value, text)
-}
+

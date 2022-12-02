@@ -95,22 +95,27 @@ function AddCloth(event){
     clothes.push(cloth);
     console.log(clothes);
     saveClothes();
-    
-   
+
     addToList();
     closetBlock();
     
 }
 function loadCloths() {
     console.log("load");
-    let lastTasks = localStorage.getItem("tasks");
-    if (!lastTasks) {
+    let lastCloths = localStorage.getItem("clothes");
+    let lastCodies = localStorage.getItem("codies");
+    clothes = []
+    codies = []
+    if (!lastCloths) {
         console.log("hi");
         return;
     }
     else{
-        tasks = JSON.parse(lastTasks);
-        tasks.forEach(addToList);
+        clothes = JSON.parse(lastCloths);
+        codies = JSON.parse(lastCodies);
+        console.log(clothes)
+        addToList();
+        addToListCodies();
     }
     
 }
@@ -137,15 +142,54 @@ function addToList (){
         makeDiv2.className = "clothBoxBody"
         makeDiv.appendChild(makeDiv2);
 
-        let makeButton = document.createElement("button");
-        makeButton.className = "Selectbtn";
-        makeButton.textContent = "Select"
-        makeDiv2.appendChild(makeButton);
 
         let makeButton1 = document.createElement("button");
         makeButton1.className = "Deletebtn";
         makeButton1.textContent = "Delete";
         makeDiv2.appendChild(makeButton1);
+    }
+    
+}
+
+function addToListCodies (){
+    for (var cod in codies){
+        let findElement = codies[cod].Season + "One";
+        console.log(findElement);
+        let springselect = document.getElementById(findElement);
+        console.log("important!!");
+        console.log(codies.clothNum);
+
+        let makeDiv = document.createElement("div");
+        makeDiv.className = "codiBox"
+        springselect.appendChild(makeDiv);
+        
+        let makeDiv2 = document.createElement("div");
+        
+        makeDiv2.className = "oneCodi";
+    
+        makeDiv.appendChild(makeDiv2);
+
+        let makeImg1 = document.createElement("img");
+        makeImage.src = codies.clothNum[0];
+        makeDiv2.appendChild(makeImg1);
+
+        let makeImg2 = document.createElement("img");
+        makeImg2.src = codies.clothNum[1];
+        makeDiv2.appendChild(makeImg2);
+
+        let makeImg3 = document.createElement("img");
+        mmakeImg3.src = codies.clothNum[2];
+        makeDiv2.appendChild(makeImg3);
+
+        let makeImg4 = document.createElement("img");
+        makeImg4.src = codies.clothNum[3];
+        makeDiv2.appendChild(makeImg4);
+
+        let makeImg5 = document.createElement("img");
+        makeImg5.src = codies.clothNum[4];
+        makeDiv2.appendChild(makeImg5);
+
+        
     }
 }
 window.addEventListener("load", () => {
@@ -160,28 +204,113 @@ let saveCodiSeason;
 let codiHasCap = 0;
 //codi.html
 function clickCodiSpring (event){
-    let codiSpring = document.querySelector("#codi-button-spring");
-    saveCodiSeason = codiSpring.innerText;
+    let springselect = document.getElementById("codi-button-spring");
+    let summerselect = document.getElementById("codi-button-summer");
+    let autumnselect = document.getElementById("codi-button-autumn");
+    let winterselect = document.getElementById("codi-button-winter");
+    springselect.style.backgroundColor = "#32b6a2";
+    summerselect.style.backgroundColor = "#9fd4f5";
+    autumnselect.style.backgroundColor = "#eaca7e";
+    winterselect.style.backgroundColor = "#a8c8dc";
+    saveCodiSeason = springselect.innerText;
+    console.log(saveCodiSeason)
 }
 function clickCodiSummer (event){
-    let codiSummer = document.querySelector("#codi-button-summer");
-    saveCodiSeason = codiSummer.innerText;
+    let springselect = document.getElementById("codi-button-spring");
+    let summerselect = document.getElementById("codi-button-summer");
+    let autumnselect = document.getElementById("codi-button-autumn");
+    let winterselect = document.getElementById("codi-button-winter");
+    springselect.style.backgroundColor = "#eaadde";
+    summerselect.style.backgroundColor = "#32b6a2";
+    autumnselect.style.backgroundColor = "#eaca7e";
+    winterselect.style.backgroundColor = "#a8c8dc";
+    saveCodiSeason = summerselect.innerText;
 }
 function clickCodiAutumn (event){
-    let codiAutumn = document.querySelector("#codi-button-autumn");
-    saveCodiSeason = codiAutumn.innerText;
+    let springselect = document.getElementById("codi-button-spring");
+    let summerselect = document.getElementById("codi-button-summer");
+    let autumnselect = document.getElementById("codi-button-autumn");
+    let winterselect = document.getElementById("codi-button-winter");
+    springselect.style.backgroundColor = "#eaadde";
+    summerselect.style.backgroundColor = "#9fd4f5";
+    autumnselect.style.backgroundColor = "#32b6a2";
+    winterselect.style.backgroundColor = "#a8c8dc";
+    saveCodiSeason = autumnselect.innerText;
 }
 function clickCodiWinter (event){
-    let codiWinter = document.querySelector("#codi-button-winter");
-    saveCodiSeason = codiWinter.innerText;
+    let springselect = document.getElementById("codi-button-spring");
+    let summerselect = document.getElementById("codi-button-summer");
+    let autumnselect = document.getElementById("codi-button-autumn");
+    let winterselect = document.getElementById("codi-button-winter");
+    springselect.style.backgroundColor = "#eaadde";
+    summerselect.style.backgroundColor = "#9fd4f5";
+    autumnselect.style.backgroundColor = "#eaca7e";
+    winterselect.style.backgroundColor = "#32b6a2";
+    saveCodiSeason = winterselect.innerText;
 }
 function clickCodiYes (event){
-    let codiYes = document.querySelector("#codi-button-yes");
+    let codiYes = document.getElementById("codi-button-yes");
+    let codiNo = document.querySelector("#codi-button-no");
+    codiYes.style.backgroundColor = "#32b6a2";
+    codiNo.style.backgroundColor = "#0a0a23";
     codiHasCap = 1;
 }
 function clickCodiNo (event){
-    let codiYes = document.querySelector("#codi-button-no");
+    let codiYes = document.getElementById("codi-button-yes");
+    let codiNo = document.querySelector("#codi-button-no");
+    codiYes.style.backgroundColor = "#0a0a23";
+    codiNo.style.backgroundColor = "#32b6a2";
     codiHasCap = 0;
+}
+
+//codi.html make random codi
+function MakeCodi (event){
+    let makeCodiArray1 = [];
+    for (var i in clothes){
+        if (clothes[i].Season == saveCodiSeason){
+            makeCodiArray1.push(clothes[i]);
+        }
+    }
+    //console.log(clothes)
+    //console.log(makeCodiArray1);
+    let makeCodiArray2 = [];
+    let choose = [];
+    for (let i = 0; i < 4 + codiHasCap; i++){
+        makeCodiArray2 = [];
+        for (var j in makeCodiArray1){
+            let whatIsPosition;
+            if (i == 0) whatIsPosition = "Outer";
+            if (i == 1) whatIsPosition = "Top";
+            if (i == 2) whatIsPosition = "Bottom";
+            if (i == 3) whatIsPosition = "Shoes";
+            if (i == 4) whatIsPosition = "Cap";
+            //console.log(clothes[j].position, whatIsPosition)
+            if (clothes[j].Position == whatIsPosition){
+                makeCodiArray2.push(clothes[j]);
+            }
+        }
+        //console.log(makeCodiArray2)
+        const randomValue = makeCodiArray2[Math.floor(Math.random() * makeCodiArray2.length)];
+        console.log(randomValue)
+        choose[i] = randomValue;
+        console.log(choose)
+    }
+    let codiCloth1 = document.querySelector("#codiCloth1");
+    let codiCloth2 = document.querySelector("#codiCloth2");
+    let codiCloth3 = document.querySelector("#codiCloth3");
+    let codiCloth4 = document.querySelector("#codiCloth4");
+    let codiCloth5 = document.querySelector("#codiCloth5");
+
+    codiCloth1.src = choose[0].image;
+    codiCloth2.src = choose[1].image;
+    codiCloth3.src = choose[2].image;
+    codiCloth4.src = choose[3].image;
+    if (codiHasCap == 1){
+        codiCloth5.src = choose[4].image;
+    }
+    if (codiHasCap == 0){
+        codiCloth5.src = "./images/grayBackground.png";
+    }
 }
 
 //codi.html add favorite 버튼 눌렀을 때 코디 변수 만들기
@@ -202,7 +331,9 @@ function AddCodi(event){
         let codiImg5 = document.querySelector("#codiCloth5").src;
         codi.clothNum.push(codiImg5);
     }
-    //console.log(codi.Season);
+    console.log(codi);
     //console.log(codi.clothNum);
     saveCodis();
+    addToListCodies();
+    closetBlock();
 }
