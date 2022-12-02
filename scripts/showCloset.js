@@ -96,6 +96,9 @@ function summerOuter(){
     summerB.style.display = "none";
     summerS.style.display = "none";
     summerC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function summerTop(){
@@ -108,6 +111,9 @@ function summerTop(){
     summerB.style.display = "none";
     summerS.style.display = "none";
     summerC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function summerBottom(){
@@ -120,6 +126,9 @@ function summerBottom(){
     summerO.style.display = "none";
     summerS.style.display = "none";
     summerC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function summerShoes(){
@@ -132,6 +141,9 @@ function summerShoes(){
     summerB.style.display = "none";
     summerO.style.display = "none";
     summerC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function summerCap(){
@@ -144,6 +156,9 @@ function summerCap(){
     summerB.style.display = "none";
     summerS.style.display = "none";
     summerO.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function autumnOuter(){
@@ -156,6 +171,9 @@ function autumnOuter(){
     autumnB.style.display = "none";
     autumnS.style.display = "none";
     autumnC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function autumnTop(){
@@ -168,6 +186,9 @@ function autumnTop(){
     autumnB.style.display = "none";
     autumnS.style.display = "none";
     autumnC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function autumnBottom(){
@@ -180,6 +201,9 @@ function autumnBottom(){
     autumnO.style.display = "none";
     autumnS.style.display = "none";
     autumnC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function autumnShoes(){
@@ -192,6 +216,9 @@ function autumnShoes(){
     autumnB.style.display = "none";
     autumnO.style.display = "none";
     autumnC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function autumnCap(){
@@ -204,6 +231,9 @@ function autumnCap(){
     autumnB.style.display = "none";
     autumnS.style.display = "none";
     autumnO.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function winterOuter(){
@@ -216,6 +246,9 @@ function winterOuter(){
     winterB.style.display = "none";
     winterS.style.display = "none";
     winterC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function winterTop(){
@@ -228,6 +261,9 @@ function winterTop(){
     winterB.style.display = "none";
     winterS.style.display = "none";
     winterC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function winterBottom(){
@@ -240,6 +276,9 @@ function winterBottom(){
     winterO.style.display = "none";
     winterS.style.display = "none";
     winterC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function winterShoes(){
@@ -252,6 +291,9 @@ function winterShoes(){
     winterB.style.display = "none";
     winterO.style.display = "none";
     winterC.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
 function winterCap(){
@@ -264,5 +306,8 @@ function winterCap(){
     winterB.style.display = "none";
     winterS.style.display = "none";
     winterO.style.display = "none";
+    springB.style.display = "none";
+    springS.style.display = "none";
+    springC.style.display = "none";
 }
 
