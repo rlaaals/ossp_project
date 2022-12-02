@@ -7,7 +7,7 @@ In order to do the things mentioned above, you have to first signup and login.
 
 # Closet page
 After you login, you will enter to "closet" page, at first you can see there are just some buttons and nothing else.
-What you have to do is click the add button which is located at right-top of the closet page.
+What you have to do is click the add button which is located at just below the season buttons of the closet page.
 
 # Add to closet page
 Add button will take you to the "Add to closet" page
@@ -21,5 +21,12 @@ Add to closet page is basically able add clothes to your closet, so that applica
 
 # Favorite page
 Favorite page is where you save the codi which appeals to you.
+You can add your favorite codi from codi page
+
+# Codi page
+Codi page is where you can get random codi from this web application.
+After you select the season and wearing cap or not by clicking button
+TODAY's LOOK will provide you the adequate codi for you
+If u loved the codi, you can add to favorite page.
  
 

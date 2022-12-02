@@ -270,7 +270,15 @@ aside{
 #add{
     display: none;
 }
-
+#springBottom{
+    display: none;
+}
+#springShoes{
+    display: none;
+}
+#springCap{
+    display: none;
+}
 #spring{
     display: none;
 }
