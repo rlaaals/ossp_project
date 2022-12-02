@@ -32,7 +32,6 @@ function loadFile(input) {
     var selectFile = input.files[0];	//선택된 파일 가져오기
     file = URL.createObjectURL(selectFile);
     document.querySelector(".uploadImage").src = file;
-
 };
 //add.html addbutton
 let addbutton = document.querySelector(".addButton");
@@ -45,7 +44,7 @@ const chageLangSelect = (target) => {
     text =  target.options[target.selectedIndex].text;
     
     console.log(value, text)
-  }
+}
 
 let cloth = {
     image: file,
@@ -85,6 +84,8 @@ function AddCloth(event){
     console.log(cloth.Position, cloth.Season, cloth.image);
     clothes.push(cloth);
     saveClothes();
+
+    
     location.href='closet.html';
 }
 

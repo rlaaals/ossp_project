@@ -132,7 +132,7 @@ h5{
     height: 15rem;
 }
 
-#clothImage{
+.clothImage{
     width: 8rem;
     height: 9rem;
 }
@@ -215,8 +215,10 @@ aside{
 }
 
 #DIYclothImage{
-    width: 8rem;
+    width: 10rem;
     height: 9rem;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
 }
 
 .favoriteBox{
