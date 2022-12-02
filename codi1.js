@@ -146,6 +146,9 @@ function addToList (){
         let makeButton1 = document.createElement("button");
         makeButton1.className = "Deletebtn";
         makeButton1.textContent = "Delete";
+        makeButton1.addEventListener("click", ()=>{
+            makeDiv.remove();
+        });
         makeDiv2.appendChild(makeButton1);
     }
     
@@ -336,4 +339,9 @@ function AddCodi(event){
     saveCodis();
     addToListCodies();
     closetBlock();
+}
+
+function deleteCloth(){
+    let curdiv = document.querySelector("#clothBox");
+    curdiv.remove();
 }
