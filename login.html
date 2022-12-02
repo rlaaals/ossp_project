@@ -9,8 +9,6 @@
     <h1>Today's Look</h1>
     <div class="loginBox" id="login">
       <div style="display: flex;">
-        <button class="selectButton" type="button" disabled="disabled">Login</button>
-        <button class="selectButton" type="button" onclick="openSignUp()">Sign Up</button>
       </div>
       <div class="loginInform">
           <h3>Login</h3>
@@ -20,52 +18,10 @@
               <input class="inputBox" type="text" id="loginEmail" placeholder="Email">
               <strong>Password</strong>
               <input class="inputBox" type="text" id="loginPassword" placeholder="Password">
-              <input class="submitButton" type="button" id="loginSubmit" value="Sign In">
+              <input class="submitButton" type="button" id="loginSubmit" value="Sign In" onclick="location.href='main.html'">
           </form>
       </div>
     </div>
-
-    <div class="signupBox" id="signup">
-      <div style="display: flex;">
-        <button class="selectButton" type="button" onclick="openLogin()">Login</button>
-        <button class="selectButton" type="button" disabled="disabled">Sign Up</button>
-      </div>
-      <div class="signupInform">
-        <h3>Sign up</h3>
-        <p>Fill in the form:</p>
-        <form class="inform" id="registerForm" method="post">
-            <strong>User name</strong>
-            <input class="inputBox" type="text" id="userName" placeholder="User name">
-            <strong>Email</strong>
-            <input class="inputBox" type="text" id="email" placeholder="Email">
-            <strong>Password</strong>
-            <input class="inputBox" type="text" id="password" placeholder="Password">
-            <strong>Confirm password</strong>
-            <input class="inputBox" type="text" id="confirmPassword" placeholder="Confirm password">
-            <input class="submitButton" type="button" id="signupSubmit" value="Sign Up">
-        </form>
-      </div>
-    </div>
-
-    <div class="completeBox" id="complete">
-      <div style="display: flex;">
-        <button class="selectButton" type="button" onclick="openLogin()">Login</button>
-        <button class="selectButton" type="button" disabled="disabled">Sign Up</button>
-      </div>
-      <div class="completeInform">
-        <h3>You are signed up</h3> 
-      </div>
-    </div>
-
-    <div class="completeBox" id="loginComplete">
-        <div class="completeInform">
-            <h3>You are logged in</h3> 
-        </div>
-    </div>
-
-    <script type="text/javascript" src="./login.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="./scripts/validate.js"></script>
-
   </body> 
 </html> 
