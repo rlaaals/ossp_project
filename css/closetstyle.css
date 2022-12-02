@@ -121,7 +121,7 @@ h5{
 }
 
 .closet-box{
-    width: 100%;
+    width: 30%;
     float : left;
     display: flex;
     padding-inline-start: 20px;
