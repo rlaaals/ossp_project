@@ -7,7 +7,7 @@ In order to do the things mentioned above, you have to first signup and login.
 
 # Closet page
 After you login, you will enter to "closet" page, at first you can see there are just some buttons and nothing else.
-What you have to do is click the add button which is located at right-top of the closet page.
+What you have to do is click the add button which is located at just below the season buttons of the closet page.
 
 # Add to closet page
 Add button will take you to the "Add to closet" page
