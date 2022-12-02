@@ -3,25 +3,22 @@ let imgSrcList = [];
 
 /* adding the cloth to DIYbox */
 
-function addToDIYBox(ImgId){
+function addToDIYBox(dir){
+    console.log(dir);
     let DIYbox = document.querySelector(".DIY-box");
 
     let div = document.createElement("div");
-    div.className = "card cloth";
-    div.id = "clothBox";
+    div.className =  "clothBox";
 
-    let ImgSrc = document.querySelector("#"+ImgId).src;
     let DIYimg = document.createElement("img");
-    DIYimg.className = "card-img-top";
-    DIYimg.id = "DIYclothImage";  
-    DIYimg.src = ImgSrc;
+    DIYimg.className = "DIYclothImage"; 
+    DIYimg.src = dir;
     imgSrcList.push(DIYimg.src); 
 
     div.appendChild(DIYimg);
 
     let cardBodydiv = document.createElement("div");
-    cardBodydiv.className = "card-body";
-    cardBodydiv.id = "clothBoxBody";
+    cardBodydiv.className = "clothBoxBody";
 
     div.appendChild(cardBodydiv);
 
