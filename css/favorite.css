@@ -48,15 +48,26 @@ body{
     color:black;
 }
 
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    width: 16vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
 .favoriteBox{
     padding: 5px;
-    height: 500px;
     overflow: auto;
 }
 
 img{
-    width: 70px;
-    height: 80px;
+    width: 60px;
+    height: 75px;
     object-fit: cover;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 10px;
@@ -65,10 +76,10 @@ img{
 
 .codiBox{
     background-color:white;
-    overflow: auto;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 10px;
     width: 220px;
+    overflow: auto;
     float: left;
     margin: 20px;
 }
@@ -95,4 +106,17 @@ img{
 
 .deleteButton:hover{
     background-color: rgb(252, 57, 57);
+}
+
+#springCodi{
+    display: none;
+}
+#summerCodi{
+    display: none;
+}
+#autumnCodi{
+    display: none;
+}
+#winterCodi{
+    display: none;
 }
