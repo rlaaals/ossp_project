@@ -4,6 +4,7 @@ Today's look can provide you the random combination from your clothes in your cl
 
 # Login page
 In order to do the things mentioned above, you have to first signup and login. Click login.html.
+<img width="1692" alt="스크린샷 2022-12-03 오전 2 19 15" src="https://user-images.githubusercontent.com/104342167/205353560-14293c34-0ba3-434f-bb39-1a54d7c4799b.png">
 
 # Closet page
 After you login, you will enter to "closet" page, at first you can see there are just some buttons and nothing else.
