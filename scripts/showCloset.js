@@ -76,8 +76,8 @@ function springShoes(){
 }
 
 function springCap(){
-    summer.style.display = "block";
-    spring.style.display = "none";
+    spring.style.display = "block";
+    summer.style.display = "none";
     autumn.style.display = "none";
     winter.style.display = "none";
     springC.style.display = "block";
