@@ -83,7 +83,7 @@
                             <div class="clothBox">
                                 <img class="clothImage" src="./images/spring_outer0.jpg" alt="Cloth image">
                                 <div class="card-body" id = "clothBoxBody">
-                                    <button class="Selectbtn">Select</button>
+                                    <button class="Selectbtn" type="button" onclick="addToDIYBox(this.parentElement.parentElement.firstChild.src);">Select</button>
                                     <button class="Deletebtn">Delete</button>
                                 </div>
                             </div>
@@ -580,32 +580,32 @@
             </section>
     
             <aside>
-                <button class="addButton" onclick="addBlock();"><i class="bi bi-plus"></i> Add</button>
+                <button class="addToClosetButton" onclick="addBlock();"><i class="bi bi-plus"></i> Add</button>
                 <h5 id="DIY">-DIY set-</h5>
                 <div class="DIY-box">
-                    <div class="card cloth" id = "clothBox">
-                        <img class="codiOne" id = "clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
+                    <div class="clothBox">
+                        <img class="clothImage" src="./images/autumn_bottom0.jpg" alt="Cloth image">
+                        <div class="clothBoxBody">
                             <div class = "col text-center">
-                                <button class="Deletebtn">Delete</button>
+                                <button class="DIYDeletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
     
-                    <div class="card cloth" id = "clothBox">
-                        <img class="codiOne" id = "clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
+                    <div class="clothBox">
+                        <img class="clothImage" src="./images/autumn_outer0.jpg" alt="Cloth image">
+                        <div class="clothBoxBody">
                             <div class = "col text-center">
-                                <button class="Deletebtn">Delete</button>
+                                <button class="DIYDeletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
     
-                    <div class="card cloth" id = "clothBox">
-                        <img class="codiOne" id = "clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
-                        <div class="card-body" id = "clothBoxBody">
+                    <div class="clothBox">
+                        <img class="clothImage" src="./images/autumn_top0.jpg" alt="Cloth image">
+                        <div class="clothBoxBody">
                             <div class = "col text-center">
-                                <button class="Deletebtn">Delete</button>
+                                <button class="DIYDeletebtn">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -904,11 +904,11 @@
     </div>
 
 
-
         <script type="text/javascript" src="./scripts/favorite.js"></script>
         <script type="text/javascript" src="./scripts/showCloset.js"></script>
         <script type="text/javascript" src="./scripts/none.js"></script>
         <script type="text/javascript" src="./codi.js"></script>
+        <script type="text/javascript" src="./closet.js"></script>
 
 
     </body>

@@ -124,7 +124,6 @@ h5{
 }
 
 .closet-box{
-    width: 100%;
     float : left;
     display: flex;
     padding-inline-start: 20px;
@@ -133,6 +132,7 @@ h5{
 
 
 .clothBox{
+    border:#cacaca, solid, 1px;
     width: 200px;
     height: 250px;
 }
@@ -189,7 +189,7 @@ aside{
     width: 300px;
     grid-area: side;
 }
-.addButton{
+.addToClosetButton{
     border: none;
     margin-top: 15px;
     width: 95%;
@@ -241,8 +241,24 @@ aside{
 }
 
 .DIY-box{
-    padding-inline-start: 70px;
-    padding-inline-end: 70px;
+    margin-inline-start: 60px;
+}
+
+.DIYDeletebtn{
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px 0px;
+}
+
+.DIYDeletebtn:hover{
+    background-color: rgb(252, 57, 57);
 }
 
 #favorite{
