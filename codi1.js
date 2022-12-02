@@ -36,6 +36,7 @@ function saveClothes(){
     localStorage.setItem("clothes", JSON.stringify(clothes));
 }
 function saveCodis() {
+    console.log("GGGGGG");
     localStorage.setItem("codies", JSON.stringify(codies))
 }
 //add.html 파일에서 이미지 선택해서 가져오기
@@ -175,11 +176,12 @@ function addToListCodies (){
     //console.log("HI");
     for (var cod in codies){
         if (codies[cod].Type != 1){
+            //console.log("FFFFF");
             let findElement = codies[cod].Season + "One";
-            //console.log(findElement);
+            console.log(findElement);
             let springselect = document.getElementById(findElement);
             //console.log("important!!");
-            //console.log(codies[cod].clothNum[0]);
+            console.log(codies[cod].clothNum[0]);
     
             let makeDiv = document.createElement("div");
             makeDiv.className = "codiBox"
@@ -208,7 +210,7 @@ function addToListCodies (){
             let makeImg5 = document.createElement("img");
             makeImg5.src = codies[cod].clothNum[4];
             makeDiv2.appendChild(makeImg5);
-    
+            console.log(makeImg1)
             let makeButton1 = document.createElement("button");
             makeButton1.className = "deleteButton";
             makeButton1.textContent = "Delete";
@@ -235,7 +237,7 @@ let saveCodiSeason;
 let codiHasCap = 0;
 //codi.html
 function clickCodiSpring (event){
-    let springselect = document.getElementById();
+    let springselect = document.getElementById("codi-button-spring");
     let summerselect = document.getElementById("codi-button-summer");
     let autumnselect = document.getElementById("codi-button-autumn");
     let winterselect = document.getElementById("codi-button-winter");
@@ -368,7 +370,8 @@ function AddCodi(event){
     codies.push(codi);
     //console.log(codi.clothNum);
     saveCodis();
-    addToListCodies();
+    loadCloths();
+    //addToListCodies();
     closetBlock();
 }
 
