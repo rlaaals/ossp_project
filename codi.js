@@ -1,4 +1,3 @@
-
 const Season = {
     Spring:1,
     Summer:2,
