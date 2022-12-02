@@ -1,48 +1,5 @@
 let idx = 0; 
-let imgSrcList = [];
 
-/* adding the cloth to DIYbox */
-
-function addToDIYBox(dir){
-    console.log(dir);
-    let DIYbox = document.querySelector(".DIY-box");
-
-    let div = document.createElement("div");
-    div.className =  "clothBox";
-
-    let DIYimg = document.createElement("img");
-    DIYimg.className = "DIYclothImage"; 
-    DIYimg.src = dir;
-    imgSrcList.push(DIYimg.src); 
-
-    div.appendChild(DIYimg);
-
-    let cardBodydiv = document.createElement("div");
-    cardBodydiv.className = "clothBoxBody";
-
-    div.appendChild(cardBodydiv);
-
-    let colDiv = document.createElement("div");
-    colDiv.className = "text-center"
-
-    cardBodydiv.appendChild(colDiv);
-
-    let Deletebtn = document.createElement("button");
-    //Deletebtn.id = DIYimg.id 
-    Deletebtn.className = "Deletebtn";
-    Deletebtn.innerHTML = 'Delete';
-
-    colDiv.appendChild(Deletebtn);
-
-    /* Delete button in the DIYbox */
-
-    Deletebtn.addEventListener("click", () => {
-        div.remove();
-    })
-
-    DIYbox.appendChild(div);
-    //idx++;
-}
 
 
 
