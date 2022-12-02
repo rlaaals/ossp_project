@@ -21,5 +21,12 @@ Add to closet page is basically able add clothes to your closet, so that applica
 
 # Favorite page
 Favorite page is where you save the codi which appeals to you.
+You can add your favorite codi from codi page
+
+# Codi page
+Codi page is where you can get random codi from this web application.
+After you select the season and wearing cap or not by clicking button
+TODAY's LOOK will provide you the adequate codi for you
+If u loved the codi, you can add to favorite page.
  
 
