@@ -46,7 +46,6 @@ function loadFile(input) {
     console.log(imageRoute);
     file = URL.createObjectURL(selectFile);
     document.querySelector(".uploadImage").src = file;
-
 };
 //add.html addbutton
 let addbutton = document.querySelector(".addButton");
@@ -100,6 +99,8 @@ function AddCloth(event){
     console.log(cloth.Position, cloth.Season, cloth.image);
     clothes.push(cloth);
     saveClothes();
+
+    
     location.href='closet.html';
 }
 

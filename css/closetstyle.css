@@ -132,7 +132,7 @@ h5{
     height: 15rem;
 }
 
-#clothImage{
+.clothImage{
     width: 8rem;
     height: 9rem;
 }
@@ -140,6 +140,10 @@ h5{
 #clothBoxBody{
     width: 10rem;
     height: 6rem;
+}
+
+.col{
+    margin-inline-start: 12px;
 }
 
 .Selectbtn{
@@ -152,7 +156,7 @@ h5{
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     text-align: center;
-    margin: 5px 30px;
+    margin: 2px 0px;
 }
 
 .Selectbtn:hover{
@@ -169,7 +173,7 @@ h5{
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     text-align: center;
-    margin: 5px 30px;
+    margin: 2px 0px;
 }
 
 .Deletebtn:hover{
@@ -177,7 +181,7 @@ h5{
 }
 
 aside{
-    width:300px;
+    width: 300px;
     grid-area: side;
 }
 .addButton{
@@ -204,36 +208,22 @@ aside{
     border-radius: 5px;
 }
 
+.closet-box{
+    width: 87%;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+#DIYclothImage{
+    width: 10rem;
+    height: 9rem;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+}
+
 .favoriteBox{
     padding: 5px;
     overflow: auto;
-}
-
-img{
-    width: 60px;
-    height: 75px;
-    object-fit: cover;
-    border: 1px solid rgb(233, 233, 233);
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.codiBox{
-    background-color:white;
-    border: 1px solid rgb(233, 233, 233);
-    border-radius: 10px;
-    width: 180px;
-    height: 300px;
-    float: left;
-    margin: 20px;
-}
-.oneCodi{
-    width: 180px;
-    height: 270px;
-    float: left;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgb(245, 245, 245);
 }
 
 .AddFavoriteBtn:hover{

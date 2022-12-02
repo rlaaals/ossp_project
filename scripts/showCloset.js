@@ -26,7 +26,6 @@ var winterB = document.getElementById("winterBottom");
 var winterS = document.getElementById("winterShoes");
 var winterC = document.getElementById("winterCap");
 
-
 function springOuter(){
     spring.style.display = "block";
     summer.style.display = "none";
@@ -76,8 +75,8 @@ function springShoes(){
 }
 
 function springCap(){
-    summer.style.display = "block";
-    spring.style.display = "none";
+    spring.style.display = "block";
+    summer.style.display = "none";
     autumn.style.display = "none";
     winter.style.display = "none";
     springC.style.display = "block";
@@ -86,8 +85,6 @@ function springCap(){
     springS.style.display = "none";
     springO.style.display = "none";
 }
-
-
 
 function summerOuter(){
     summer.style.display = "block";
@@ -149,8 +146,6 @@ function summerCap(){
     summerO.style.display = "none";
 }
 
-
-
 function autumnOuter(){
     autumn.style.display = "block";
     summer.style.display = "none";
@@ -205,12 +200,11 @@ function autumnCap(){
     spring.style.display = "none";
     winter.style.display = "none";
     autumnC.style.display = "block";
+    autumnT.style.display = "none";
     autumnB.style.display = "none";
     autumnS.style.display = "none";
     autumnO.style.display = "none";
 }
-
-
 
 function winterOuter(){
     winter.style.display = "block";
