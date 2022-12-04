@@ -42,4 +42,7 @@ After you select the season and wearing cap or not by clicking button
 TODAY's LOOK will provide you the adequate codi for you
 If u loved the codi, you can add to favorite page.
  
+# Youtube Link
+ https://youtu.be/KP5lQKrZGzA
+
 우수 프로젝트 시상 프로그램에 지원합니다.
